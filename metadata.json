@@ -1,0 +1,6 @@
+{
+  "name": "Vuka Gigs - Informal Gig Platform",
+  "description": "An offline-first, POPIA-compliant platform connecting informal workers and hiring clients with smart transit-line matching, multilingual support, and a USSD companion simulator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

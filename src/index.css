@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html, body {
+    /* Prevent horizontal overflow and enable smooth, native elastic-like scroll */
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    /* Disable default touch highlighting behavior on iOS/Android link taps */
+    -webkit-tap-highlight-color: transparent;
+    /* Prevent default font boost zoom in landscape mode on mobile */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Optimize touch target feedback and scrolling speed on touch devices */
+  button, select, input, textarea {
+    touch-action: manipulation;
+  }
+
+  /* Elegant iOS-friendly scroll mechanics */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #EAE3D8;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D95F38;
+  }
+}
+
